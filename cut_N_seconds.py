@@ -3,7 +3,6 @@ import os
 
 
 def cut_n_seconds(in_file, out_file, n):
-
     secs = n % (24 * 3600)
     hrs = secs // 3600
     secs %= 3600
@@ -14,14 +13,13 @@ def cut_n_seconds(in_file, out_file, n):
                    + '.mp4 -to ' + str(hrs) + ':' + str(mins) + ':' + str(secs) \
                    + ' -c copy ' + str(out_file) + '.mp4'
 
-    print(command_line)
     os.system(command_line)
 
 
 print("")
 print("############################## CUT N SECONDS PROGRAM ############################################")
-print("The input video file must be an mp4 "
-      "in the same folder as this python script, ")
+print("")
+print("The input video file must be an mp4 in the same folder as this python script, ")
 print("and the name of it needs to be 'BBB'. Please do not specify the format of the output ")
 print("in the output name.")
 print("")
@@ -34,5 +32,9 @@ while not boolean:
     output_name = str(input("Choose the name of the output file: "))
     if output_name != input_name:
         boolean = True
+
+    print("")
+    print("The chosen name is the same as the input, try with another name.")
+    print("")
 
 cut_n_seconds(input_name, output_name, N)
