@@ -11,7 +11,6 @@ def display_yuv_histogram(in_file, out_file):
 
     # -c:a is due to re-encoding the video because we are filtering it
 
-
     os.system(command_line)
 
 
