@@ -18,4 +18,5 @@ This script is able to resize the scale of the BBB video to one of this scales:
 ## Task 4 (mono_stereo.py)
 This script is able to convert a video audio track from mono to stereo and vice-versa.
 
-
+## Task 5 (all_in_one.py)
+This script is able to show an interactive menu where you can select the exercise that you want to execute.
