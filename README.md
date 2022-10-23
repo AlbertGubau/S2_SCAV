@@ -10,8 +10,8 @@ This script is able to show an histogram of the YUV color components of the BBB 
 ## Task 3 (resize_video.py)
 This script is able to resize the scale of the BBB video to one of this scales:
 
-· 1280x720p
-· 480p
+· 1280x720
+· 854x480
 · 360x240
 · 160x120
 
