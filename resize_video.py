@@ -2,7 +2,7 @@
 import os
 
 
-def display_yuv_histogram(in_file, out_file, option):
+def resize_video(in_file, out_file, option):
 
     # We check what resolution is the one that the user wants, and we store the correspondent command line
     if option == 1:
@@ -60,4 +60,4 @@ while not boolean:
     print("")
 
 # Call the function
-display_yuv_histogram(input_name, output_name, opt)
+resize_video(input_name, output_name, opt)
