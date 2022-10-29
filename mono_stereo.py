@@ -2,7 +2,7 @@
 import os
 
 
-def display_yuv_histogram(in_file, out_file, option):
+def mono_stereo(in_file, out_file, option):
 
     if option == 1:  # Stereo to mono command line
         command_line = 'ffmpeg -i ' + str(in_file) + '.mp4 -ac 1 ' + str(out_file) + '.mp4 '
@@ -49,4 +49,4 @@ while not boolean:
     print("")
 
 # Call the function
-display_yuv_histogram(input_name, output_name, opt)
+mono_stereo(input_name, output_name, opt)
